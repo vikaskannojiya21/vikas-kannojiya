@@ -3,14 +3,14 @@ using namespace std;
 class A{
 	public:
 	 	void ADD(){
-	 	 cout<<"ADD";	
+	 	 cout<<"\nADD";	
 		 }
 		
 };
 class B : public A{
 	public:
 		void ADD(){
-			cout<<"Sub";
+			cout<<"\nSub";
 		}
 };
 
@@ -18,5 +18,7 @@ int main(){
 	
 	B obj;
 	obj.ADD();
+	 
+	obj.A::ADD();
 	return 0;
 }
